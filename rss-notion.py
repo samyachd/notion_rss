@@ -19,7 +19,6 @@ import os
 import json
 import time
 from datetime import datetime
-
 import feedparser
 import requests
 from dotenv import load_dotenv
@@ -35,7 +34,10 @@ DATABASE_ID = os.environ["NOTION_DATABASE_ID"]
 # Les flux que tu veux suivre. Ajoute autant d'URL que tu veux ici.
 # Astuce : un subreddit s'écrit https://www.reddit.com/r/python.rss
 FLUX = [
-    "https://www.reddit.com/r/python.rss",
+    "https://korben.info/feed",
+    "https://www.numerama.com/feed/",
+    "https://news.ycombinator.com/rss",
+    "https://feeds.arstechnica.com/arstechnica/index"
 ]
 
 # Noms EXACTS des colonnes de ta base Notion (modifie si tu les as nommées autrement)
