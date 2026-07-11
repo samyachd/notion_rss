@@ -40,6 +40,8 @@ FLUX = [
     "https://feeds.arstechnica.com/arstechnica/index"
 ]
 
+# Liens de scraping
+
 # Noms EXACTS des colonnes de ta base Notion (modifie si tu les as nommées autrement)
 COL_TITRE = "Titre"
 COL_LIEN = "Lien"

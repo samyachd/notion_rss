@@ -24,7 +24,6 @@ liste_de_sujets = [
             "https://www.monde-diplomatique.fr/rss/",
             "https://www.courrierinternational.com/feed/all/rss.xml",
             "https://www.lemonde.fr/rss/une.xml",
-            "https://www.monde-diplomatique.fr/rss/",
             
         ]
     }

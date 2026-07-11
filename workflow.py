@@ -69,6 +69,7 @@ def generate_synthese(content):
         config=types.GenerateContentConfig(
             temperature=0.5,
             system_instruction="""Tu es un assistant qui résume des articles.
+            Mets moi uniquement les news du jour, en français, sous forme de synthèse.
             Renvoies un simple résumé en texte brut, sans mise en forme, sans balises HTML, sans emojis, sans hashtags."""
         ),
         contents=[
@@ -83,6 +84,7 @@ def generate_synthese(content):
 def create_page(notion_page_id, subject):
     nouvelle_page = notion.pages.create(
         parent={"page_id": notion_page_id},
+        position={"type": "page_start"},
         properties={
             "title": {"title": [{"text": {"content": f"Synthèse actualités {subject} du {DAY}"}}]}
         },
